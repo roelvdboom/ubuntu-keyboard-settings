@@ -8,3 +8,6 @@ setxkbmap -rules "evdev" -model "pc105" -layout "us,us" -option "terminate:ctrl_
 #  - variant without dead keys
 xmodmap -e "keycode  94 = grave asciitilde"
 xmodmap -e "keycode  49 = less greater less greater bar brokenbar bar brokenbar"
+
+# Disable middle mouse button paste
+xmodmap -e "pointer = 1 25 3 4 5 6 7 8 9"
